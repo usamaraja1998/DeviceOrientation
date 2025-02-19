@@ -25,16 +25,15 @@ document.addEventListener("visibilitychange" , function(){
         document.title = "😟😒 Come Back!"
     }else{
         document.title = "Page Visibility APIs"
-
     }
 })
 
 //Device Orientation API
 
 window.addEventListener("deviceorientation" , function(e){
-    var alpha = e.alpha.toFixed(2)
-    var beta = e.beta.toFixed(2)
-    var gamma = e.gamma.toFixed(2)
+    var alpha = e.alpha
+    var beta = e.beta
+    var gamma = e.gamma
 
     document.getElementById("deviceStatus").innerHTML = `Alpha: ${alpha} , Beta: ${beta} , Gamma: ${gamma}`
 
